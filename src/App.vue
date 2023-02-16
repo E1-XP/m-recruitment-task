@@ -1,7 +1,4 @@
-<script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <header>
@@ -18,12 +15,10 @@ import TheWelcome from "./components/TheWelcome.vue";
     </div>
   </header>
 
-  <main>
-    <TheWelcome />
-  </main>
+  <main></main>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 header {
   line-height: 1.5;
 }
