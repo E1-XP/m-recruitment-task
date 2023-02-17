@@ -3,8 +3,8 @@
 <template>
   <section class="how-it-work">
     <header class="how-it-work__header">
-      <h2 class="heading">How It Work</h2>
-      <p class="subtitle">
+      <h2 class="heading h-text-center">How It Work</h2>
+      <p class="subtitle h-text-center">
         A Simple, Proven Way to Boost Your Team Performance.
       </p>
       <p class="subtitle-2">
@@ -21,6 +21,7 @@
 .how-it-work {
   &__header {
     margin: 0 auto;
+    width: 18.979rem;
   }
 }
 </style>

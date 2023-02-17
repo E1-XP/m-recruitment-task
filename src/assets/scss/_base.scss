@@ -1,4 +1,6 @@
 html {
+  font-family: "Inter", sans-serif;
+
   @include bp($bp-large) {
     font-size: 87.5%;
   }
