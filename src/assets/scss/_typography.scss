@@ -1,17 +1,19 @@
 .heading {
   color: $color-primary;
   font-family: "Poppins", sans-serif;
-  font-size: 0.714rem;
+  font-size: 0.833rem;
 }
 
 .subtitle {
   color: $color-dark;
   font-family: "Inter", sans-serif;
-  font-size: 1.0714rem;
+  font-size: 1.25rem;
+  line-height: 1.45;
 }
 
 .subtitle-2 {
   color: $color-gray;
   font-family: "Poppins", sans-serif;
-  font-size: 0.643rem;
+  font-size: 0.75rem;
+  line-height: 1.75;
 }

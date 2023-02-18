@@ -2,10 +2,6 @@ html {
   font-family: "Inter", sans-serif;
 
   @include bp($bp-large) {
-    font-size: 87.5%;
-  }
-
-  @include bp($bp-very-small) {
     font-size: 75%;
   }
 }
