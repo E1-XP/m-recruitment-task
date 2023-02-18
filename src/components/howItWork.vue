@@ -94,13 +94,13 @@ const data = [
     justify-content: space-between;
     margin-top: 1.792rem;
     margin-bottom: 3.583rem;
+  }
 
-    &__item {
-      border-radius: 4px;
+  &__item {
+    border-radius: 4px;
 
-      &--active {
-        box-shadow: $box-shadow;
-      }
+    &--active {
+      box-shadow: $box-shadow;
     }
   }
 }
