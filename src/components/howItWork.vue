@@ -58,6 +58,8 @@ import actionCards from "./actionCards.vue";
   &__image {
     pointer-events: none;
     -webkit-user-drag: none;
+    height: 100%;
+    width: auto;
   }
 }
 </style>
