@@ -1,23 +1,20 @@
 <script setup lang="ts">
-import fingerprintIcon from "./icons/fingerprintIcon.vue";
-import lockIcon from "./icons/lockIcon.vue";
-import profileSettingsIcon from "./icons/profileSettingsIcon.vue";
+import FingerprintIcon from "./icons/fingerprintIcon.vue";
+import LockIcon from "./icons/lockIcon.vue";
+import ProfileSettingsIcon from "./icons/profileSettingsIcon.vue";
 
 const cardData = [
   {
     title: "Install the App",
     text: "Big, small, online, offline, local or international. Size doesn’t matter. We work on diverse projects for top brands.",
-    icon: "fingerprintIcon",
   },
   {
     title: "Login First",
     text: "Most popular type of partnership. limited liabilities, Size doesn’t work on diverse projects for top brands.",
-    icon: "lockIcon",
   },
   {
     title: "Setup Your Profile",
     text: "Popular type of partnership. limited liabilities, in fact, the only Size doesn’t matter. diverse projects for top brands.",
-    icon: "profileSettingsIcon",
   },
 ];
 </script>
@@ -38,9 +35,9 @@ const cardData = [
             'card__icon--success': idx === 2,
           }"
         >
-          <fingerprintIcon v-if="idx === 0" />
-          <lockIcon v-if="idx === 1" />
-          <profileSettingsIcon v-if="idx === 2" />
+          <FingerprintIcon v-if="idx === 0" />
+          <LockIcon v-if="idx === 1" />
+          <ProfileSettingsIcon v-if="idx === 2" />
         </span>
         <h3
           class="subtitle card__title"
