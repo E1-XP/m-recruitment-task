@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import actionCards from "./actionCards.vue";
+</script>
 
 <template>
   <section class="how-it-work">
@@ -13,7 +15,7 @@
           fact, the only type of company allowed by Companies.
         </p>
       </header>
-      <div class="how-it-work__actions"></div>
+      <actionCards />
       <figure class="how-it-work__picture">
         <img
           src="./../assets/images/Image.png"
@@ -47,11 +49,6 @@
     margin: 0 auto;
     margin-top: 1.1rem;
     margin-bottom: 0.91rem;
-  }
-
-  &__actions {
-    background-color: red;
-    height: 300px;
   }
 
   &__picture {
