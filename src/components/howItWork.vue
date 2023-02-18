@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import actionCards from "./actionCards.vue";
+import ActionCards from "./actionCards.vue";
 </script>
 
 <template>
@@ -15,7 +15,7 @@ import actionCards from "./actionCards.vue";
           fact, the only type of company allowed by Companies.
         </p>
       </header>
-      <actionCards />
+      <ActionCards />
       <figure class="how-it-work__picture">
         <img
           src="./../assets/images/Image.png"
