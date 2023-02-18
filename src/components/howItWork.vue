@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ActionCards from "./actionCards.vue";
+import ActionCard from "./actionCard.vue";
 </script>
 
 <template>
