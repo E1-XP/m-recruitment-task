@@ -3,78 +3,40 @@ import FingerprintIcon from "./icons/fingerprintIcon.vue";
 import LockIcon from "./icons/lockIcon.vue";
 import ProfileSettingsIcon from "./icons/profileSettingsIcon.vue";
 
-const cardData = [
-  {
-    title: "Install the App",
-    text: "Big, small, online, offline, local or international. Size doesn’t matter. We work on diverse projects for top brands.",
-  },
-  {
-    title: "Login First",
-    text: "Most popular type of partnership. limited liabilities, Size doesn’t work on diverse projects for top brands.",
-  },
-  {
-    title: "Setup Your Profile",
-    text: "Popular type of partnership. limited liabilities, in fact, the only Size doesn’t matter. diverse projects for top brands.",
-  },
-];
+import type { ActionData } from "@/interfaces";
+
+defineProps<{ data: ActionData; idx: number }>();
 </script>
 
 <template>
-  <ul class="feature-cards">
-    <li
-      class="feature-cards__item"
-      :class="{ 'feature-cards__item--active': idx === 1 }"
-      v-for="(card, idx) in cardData"
-      v-bind:key="card.title"
+  <a href="#" class="card">
+    <span
+      class="card__icon"
+      :class="{
+        'card__icon--danger': idx === 1,
+        'card__icon--success': idx === 2,
+      }"
     >
-      <a href="#" class="card">
-        <span
-          class="card__icon"
-          :class="{
-            'card__icon--danger': idx === 1,
-            'card__icon--success': idx === 2,
-          }"
-        >
-          <FingerprintIcon v-if="idx === 0" />
-          <LockIcon v-if="idx === 1" />
-          <ProfileSettingsIcon v-if="idx === 2" />
-        </span>
-        <h3
-          class="subtitle card__title"
-          :class="{
-            'card__title--danger': idx === 1,
-            'card__title--success': idx === 2,
-          }"
-        >
-          {{ card.title }}
-        </h3>
-        <p class="subtitle-2 card__subtitle">
-          {{ card.text }}
-        </p>
-      </a>
-    </li>
-  </ul>
+      <FingerprintIcon v-if="idx === 0" />
+      <LockIcon v-if="idx === 1" />
+      <ProfileSettingsIcon v-if="idx === 2" />
+    </span>
+    <h3
+      class="subtitle card__title"
+      :class="{
+        'card__title--danger': idx === 1,
+        'card__title--success': idx === 2,
+      }"
+    >
+      {{ data.title }}
+    </h3>
+    <p class="subtitle-2 card__subtitle">
+      {{ data.text }}
+    </p>
+  </a>
 </template>
 
 <style lang="scss" scoped>
-.feature-cards {
-  width: 23rem;
-  justify-self: end;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 1.792rem;
-  margin-bottom: 3.583rem;
-
-  &__item {
-    border-radius: 4px;
-
-    &--active {
-      box-shadow: $box-shadow;
-    }
-  }
-}
-
 .card {
   display: grid;
   grid-template-columns: 2.708rem auto;
