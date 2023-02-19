@@ -11,6 +11,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.6.12",
     "normalize-scss": "^7.0.1",
     "vue": "^3.2.45",
     "vue3-autocounter": "^1.0.6"

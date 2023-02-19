@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Header from "./header.vue";
+import Slider from "./slider.vue";
 
 const headerData = {
   heading: "Screenshots",
@@ -12,6 +13,7 @@ const headerData = {
 <template>
   <section class="screenshots">
     <Header class="screenshots__header" :data="headerData" />
+    <Slider />
   </section>
 </template>
 
