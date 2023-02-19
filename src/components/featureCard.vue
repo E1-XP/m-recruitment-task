@@ -4,7 +4,10 @@ import HeartIcon from "./icons/heartIcon.vue";
 import UserIcon from "./icons/userIcon.vue";
 import ReviewsIcon from "./icons/reviewsIcon.vue";
 
-import type { StatisticsData } from "./../interfaces";
+export interface StatisticsData {
+  title: string;
+  subtitle: string;
+}
 
 defineProps<{ data: StatisticsData; idx: number }>();
 </script>
