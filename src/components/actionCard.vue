@@ -3,7 +3,10 @@ import FingerprintIcon from "./icons/fingerprintIcon.vue";
 import LockIcon from "./icons/lockIcon.vue";
 import ProfileSettingsIcon from "./icons/profileSettingsIcon.vue";
 
-import type { ActionData } from "@/interfaces";
+export interface ActionData {
+  title: string;
+  text: string;
+}
 
 defineProps<{ data: ActionData; idx: number }>();
 </script>
