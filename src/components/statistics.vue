@@ -5,13 +5,13 @@ import Shape1 from "./backgrounds/shape1.vue";
 import Shape2 from "./backgrounds/shape2.vue";
 
 const data = [
-  { title: "25K+", subtitle: "App Downloads" },
+  { title: "25", subtitle: "App Downloads" },
   {
-    title: "1200+",
+    title: "1200",
     subtitle: "Happy Clients",
   },
-  { title: "14K+", subtitle: "Active User" },
-  { title: "3500+", subtitle: "Total Reviews" },
+  { title: "14", subtitle: "Active User" },
+  { title: "3500", subtitle: "Total Reviews" },
 ];
 </script>
 

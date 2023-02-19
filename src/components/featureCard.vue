@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Vue3Autocounter from "vue3-autocounter";
+
 import DownloadIcon from "./icons/downloadIcon.vue";
 import HeartIcon from "./icons/heartIcon.vue";
 import UserIcon from "./icons/userIcon.vue";
@@ -21,8 +23,18 @@ defineProps<{ data: StatisticsData; idx: number }>();
       <ReviewsIcon v-if="idx === 3" />
     </span>
     <h3 class="feature-card__title">
-      {{ data.title }}
+      <Vue3Autocounter
+        ref="counter"
+        :startAmount="0"
+        :endAmount="Number(data.title)"
+        :suffix="Number(data.title) < 100 ? `K+` : `+`"
+        separator=""
+        decimalSeparator="."
+        :duration="3"
+        :autoinit="true"
+      />
     </h3>
+
     <p class="feature-card__subtitle">
       {{ data.subtitle }}
     </p>
