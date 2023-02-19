@@ -79,6 +79,14 @@ const data = [
 
   &__picture {
     user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    @include bp($bp-small) {
+      grid-column: 1/3;
+    }
   }
 
   &__image {
@@ -96,6 +104,11 @@ const data = [
     justify-content: space-between;
     margin-top: 1.792rem;
     margin-bottom: 3.583rem;
+
+    @include bp($bp-small) {
+      grid-column: 1/3;
+      justify-self: center;
+    }
   }
 
   &__item {

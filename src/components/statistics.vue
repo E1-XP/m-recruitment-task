@@ -50,12 +50,18 @@ const data = [
     justify-content: space-evenly;
     width: 68%;
     margin: 0 auto;
+
+    @include bp($bp-small) {
+      flex-direction: column;
+      height: 48rem;
+    }
   }
 
   &__shape1 {
     position: absolute;
     bottom: 26%;
     transform: scale(221%) translateX(28%) translateY(-16%);
+    z-index: -1;
 
     @include bp($bp-very-large) {
       transform: scale(169%) translateX(22%);
@@ -64,6 +70,10 @@ const data = [
     @include bp($bp-medium) {
       transform: initial;
     }
+
+    @include bp($bp-small) {
+      display: none;
+    }
   }
 
   &__shape2 {
@@ -71,9 +81,14 @@ const data = [
     bottom: 6%;
     right: 0;
     transform: scale(140%) translateX(-15%) translateY(-13%);
+    z-index: -1;
 
     @include bp($bp-large) {
       transform: initial;
+    }
+
+    @include bp($bp-small) {
+      display: none;
     }
   }
 }
