@@ -54,6 +54,8 @@ const data = [
 
 <style scoped lang="scss">
 .how-it-work {
+  margin-bottom: 2rem;
+
   & :global(.l-container) {
     display: grid;
     grid-template-rows: auto auto;
