@@ -28,5 +28,28 @@ defineProps<{ data: StatisticsData; idx: number }>();
 
 <style lang="scss" scoped>
 .feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    width: 1.892rem;
+    height: 1.892rem;
+    margin-bottom: 2.058rem;
+  }
+
+  &__title {
+    font-size: 1.833rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.192rem;
+  }
+
+  &__subtitle {
+    font-size: 0.833rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+  }
 }
 </style>
