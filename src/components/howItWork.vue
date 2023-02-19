@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Header from "./header.vue";
 import ActionCard from "./actionCard.vue";
 
 const data = [
@@ -15,21 +16,19 @@ const data = [
     text: "Popular type of partnership. limited liabilities, in fact, the only Size doesn’t matter. diverse projects for top brands.",
   },
 ];
+
+const headerData = {
+  heading: "How It Work",
+  subtitle: "A Simple, Proven Way to Boost Your Team Performance.",
+  subtitle2:
+    "Most popular type of partnership Malta. The limited liability is, in fact, the only type of company allowed by Companies.",
+};
 </script>
 
 <template>
   <section class="how-it-work">
     <div class="l-container how-it-work__container">
-      <header class="how-it-work__header">
-        <h2 class="heading h-text-center">How It Work</h2>
-        <p class="subtitle h-text-center how-it-work__subtitle">
-          A Simple, Proven Way to Boost Your Team Performance.
-        </p>
-        <p class="subtitle-2">
-          Most popular type of partnership Malta. The limited liability is, in
-          fact, the only type of company allowed by Companies.
-        </p>
-      </header>
+      <Header class="how-it-work__header" :data="headerData" />
       <ul class="how-it-work__list">
         <li
           class="how-it-work__item"
@@ -67,14 +66,6 @@ const data = [
     margin: 0 auto;
     margin-top: 2.667rem;
     margin-bottom: 1.821rem;
-    width: 22.23rem;
-  }
-
-  &__subtitle {
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 1.1rem;
-    margin-bottom: 0.91rem;
   }
 
   &__picture {
