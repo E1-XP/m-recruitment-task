@@ -79,7 +79,7 @@ const oncardClick = (idx: number) => {
 .how-it-work {
   margin-bottom: 2rem;
 
-  & :global(.l-container) {
+  &__container {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
